@@ -16,3 +16,6 @@ type Personaje = (NombrePersonaje, PoderBasico, nombreSuperPoder, radioSuperPode
 
 espina :: Personaje
 espina = ("Espina", "Bola de Espinas", "Granada de Espinas", 5, True, 4800)
+
+pamela :: Personaje
+pamela = ("Pamela", "Lluvia de Tuercas Sanadoras", "Super Torreta Curativa", 
