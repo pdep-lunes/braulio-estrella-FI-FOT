@@ -2,20 +2,22 @@ module Lib () where
 
 import Text.Show.Functions ()
 
-doble :: Int -> Int
-doble x = x * 2
+data Personaje = unPersonaje{
+    NombrePersonaje :: string,
+    PoderBasico :: string,
 
-type NombrePersonaje = string
-type PoderBasico = string
-type nombreSuperPoder = string
-type radioSuperPoder = Int
-type Actividad = bool
-type CantidadDeVida = Int
+    nombreSuperPoder :: string,
+    radioSuperPoder :: Int,
 
-type Personaje = (NombrePersonaje, PoderBasico, nombreSuperPoder, radioSuperPoder, Actividad, CantidadDeVida)
+    Actividad :: bool,
+    CantidadDeVida :: Int,
+}
 
 espina :: Personaje
-espina = ("Espina", "Bola de Espinas", "Granada de Espinas", 5, True, 4800)
+espina = ("Espina", "Bola de Espinas", superPoder, True, 4800)
 
 pamela :: Personaje
-pamela = ("Pamela", "Lluvia de Tuercas Sanadoras", "Super Torreta Curativa", 
+pamela = ("Pamela", "Lluvia de Tuercas Sanadoras", "Super Torreta Curativa",  , False, 9600)
+
+bolaEspinosa :: Personaje -> Int
+bolaEspinosa unPersonaje =(-1000).
