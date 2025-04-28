@@ -1,0 +1,15 @@
+type NombrePersonaje = string
+type PoderBasico = string
+
+type nombreSuperPoder = string
+type radioSuperPoder = Int
+type Actividad = string
+type CantidadDeVida = Int
+
+type SuperPoder = (nombreSuperPoder, radioSuperPoder)
+
+type Personaje = (NombrePersonaje, PoderBasico, SuperPoder, Actividad, CantidadDeVida)
+
+espina :: Personaje
+espina = ("Espina", "Bola de Espinas", "
+")
